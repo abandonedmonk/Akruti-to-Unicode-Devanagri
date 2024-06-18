@@ -43,6 +43,7 @@ def convert_akruti_to_unicode(akruti_text):
     i = 0
 
     for char in unicode_text:
+        arr.append(char)
         for matra in vowel:
             if arr[i - 1] + arr[i] == '्' + matra:
                 unicode_text = unicode_text.replace(
